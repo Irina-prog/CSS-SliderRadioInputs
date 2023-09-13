@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.body {
+  background: burlywood;
+  font-size: 10px;
+}
+
+
+.slider-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 500px;
+  background: yellow;
+  border: 1px solid greenyellow;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+}
+
+
+.navigation {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  width: 12rem;
+  justify-content: space-between;
+  transform: translate(-50%);
+}
+
+
+.navigation .circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+}
+
+
+.navigation .circle:hover {
+  background: #000;
+}
+
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+
+.slides {
+  display: flex;
+  height: 100%;
+  width: 500%;
+}
+
+
+.photo {
+  width: 20%;
+  transition: 0.5s ease;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+#button1:checked~.first {
+  margin-left: 0;
+}
+
+
+#button2:checked~.first {
+  margin-left: -20%;
+}
+
+
+#button3:checked~.first {
+  margin-left: -40%;
+}
+
+
+#button4:checked~.first {
+  margin-left: -60%;
+}
+
+
+#button5:checked~.first {
+  margin-left: -80%;
+}
